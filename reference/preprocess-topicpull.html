@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="description" content="The topicpull step pulls content into xref and link elements. This step is implemented in XSLT."><meta name="keywords" content=", xref, link, desc, linktext, preprocessing, topicpull, XSLT"><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"><title>Pull content into topics (topicpull)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+	 @media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    
+    max-width: 2140px;
+  }
+}
+</style></head><body id="preprocess-topicpull"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="/">DITA Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">FIRST LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">SECOND LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THIRD LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FOURTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FIFTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">SIXTH LINK</a></li>
+      </ul>
+    </div>
+	 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="mx-3">
+                        <!-- <a href="onclick="window.print()" class="btn btn-style btn-primary" onclick="window.print()">Default Button</a> -->
+						<button onclick="codespeedy()()" style="background: blueviolet;border: blue;">Print this page</button>
+						<!-- <input type="button" onclick="printInvoice();" value="Print"> -->
+                    </li>
+                </ul>
+            </div>
+  </div>
+</nav></header><script type="text/javascript">
+        
+    function codespeedy(){
+      var print_div = document.getElementById("abhi2");
+var print_area = window.open();
+print_area.document.write(print_div.innerHTML);
+print_area.document.close();
+print_area.focus();
+print_area.print();
+print_area.close();
+
+    }
+  </script><section id="faq" class="w3l-content-4 py-5"><div class="container"><div class="row"><div class="col-lg-3.5" style="padding: 20px;"><div class="container" id="abhi1"><nav role="toc" class="col" id="abhi1"><ul><li><a href="../index.html">DITA Open Toolkit 3.6</a></li><li><a href="../release-notes/index.html">Release Notes</a></li><li><a href="../topics/installing-client.html">Installing DITA-OT</a></li><li><a href="../topics/building-output.html">Building output</a></li><li><a href="../topics/input-formats.html">Authoring formats</a></li><li><a href="../topics/output-formats.html">Output formats</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../topics/html-customization.html">Customizing HTML</a></li><li><a href="../topics/pdf-customization.html">Customizing PDF</a></li><li><a href="../topics/adding-plugins.html">Adding plug-ins</a></li><li><a href="../topics/custom-plugins.html">Creating plug-ins</a></li><li><a href="../topics/troubleshooting-overview.html">Troubleshooting</a></li><li><a href="../reference/index.html">Reference</a><ul><li><a href="../reference/architecture.html">DITA-OT architecture</a><ul><li><a href="../reference/processing-structure.html">Processing structure</a></li><li><a href="../reference/map-first-preprocessing.html">Map-first preprocessing</a></li><li><a href="../reference/processing-pipeline-modules.html">Processing modules</a></li><li><a href="../reference/processing-order.html">Processing order</a></li><li><a href="../reference/store-api.html">Store API</a></li><li><a href="../reference/preprocessing.html">Pre-processing modules</a><ul><li><a href="../reference/preprocess-genlist.html">Generate lists (gen-list)</a></li><li><a href="../reference/preprocess-debugfilter.html">Debug and filter (debug-filter)</a></li><li><a href="../reference/preprocess-mapref.html">Resolve map references (mapref)</a></li><li><a href="../reference/preprocess-branch-filter.html">Branch filtering (branch-filter)</a></li><li><a href="../reference/preprocess-keyref.html">Resolve key references (keyref)</a></li><li><a href="../reference/preprocess-copy-to.html">Copy topics (copy-to)</a></li><li><a href="../reference/preprocess-conrefpush.html">Conref push (conrefpush)</a></li><li><a href="../reference/preprocess-conref.html">Resolve content references (conref)</a></li><li><a href="../reference/preprocess-profile.html">Filter conditional content (profile)</a></li><li><a href="../reference/preprocess-topic-fragment.html">Resolve topic fragments and code references (topic-fragment)</a></li><li><a href="../reference/preprocess-chunk.html">Chunk topics (chunk)</a></li><li><a href="../reference/preprocess-metadata.html">Move metadata (move-meta-entries) and pull content into maps (mappull) </a></li><li><a href="../reference/preprocess-maplink.html">Map based linking (maplink)</a></li><li class="active"><a href="../reference/preprocess-topicpull.html">Pull content into topics (topicpull)</a></li><li><a href="../reference/preprocess-flagging.html">Flagging (flag-module)</a></li><li><a href="../reference/preprocess-clean-map.html">Map cleanup (clean-map)</a></li><li><a href="../reference/preprocess-copyfiles.html">Copy related files (copy-files)</a></li></ul></li><li><a href="../reference/html-based-processing.html">HTML-based processing modules</a></li><li><a href="../reference/pdf-transform.html">PDF processing modules</a></li></ul></li><li><a href="../reference/dita-spec-support.html">DITA specification support</a></li><li><a href="../extension-points/plugin-extension-points.html">Extension points</a></li><li><a href="../reference/license.html">License</a></li><li><a href="../reference/glossary.html#glossary">Glossary</a></li></ul></li><li><a href="../topics/dita-and-dita-ot-resources.html">Resources</a></li></ul></nav></div></div><div class="content-right col-lg-8 pl-lg-4 mt-lg-0 mt-3"><section class="accordion-section clearfix mt-3" aria-label="Question Accordions"><div class="container"><div class="container" id="abhi2"><div class="row"><main role="main" class="col" id="abhi2"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Pull content into topics (topicpull)</h1>
+  
+  
+  <div class="body conbody"><p class="shortdesc">The <code class="ph codeph">topicpull</code> step pulls content into <code class="keyword markupname xmlelement">&lt;xref&gt;</code> and
+      <code class="keyword markupname xmlelement">&lt;link&gt;</code> elements. This step is implemented in XSLT.</p>
+    <section class="section">
+      <p class="p">If an <code class="keyword markupname xmlelement">&lt;xref&gt;</code> element does not contain link text, the target is examined and the link
+        text is pulled. For example, a reference to a topic pulls the title of the topic; a reference to a list item
+        pulls the number of the item. If the <code class="keyword markupname xmlelement">&lt;xref&gt;</code> element references a topic that has a short
+        description, and the <code class="keyword markupname xmlelement">&lt;xref&gt;</code> element does not already contain a child
+          <code class="keyword markupname xmlelement">&lt;desc&gt;</code> element, a <code class="keyword markupname xmlelement">&lt;desc&gt;</code> element is created that contains the
+        text from the topic short description.</p>
+      <p class="p">The process is similar for <code class="keyword markupname xmlelement">&lt;link&gt;</code> elements. If the <code class="keyword markupname xmlelement">&lt;link&gt;</code> element
+        does not have a child <code class="keyword markupname xmlelement">&lt;linktext&gt;</code> element, one is created with the appropriate link text.
+        Similarly, if the <code class="keyword markupname xmlelement">&lt;link&gt;</code> element does not have a child <code class="keyword markupname xmlelement">&lt;desc&gt;</code>
+        element, and the short description of the target can be determined, a <code class="keyword markupname xmlelement">&lt;desc&gt;</code> element is
+        created that contains the text from the topic short description.</p></section>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../reference/preprocessing.html" title="The pre-processing operation is a set of steps that typically runs at the beginning of every DITA-OT transformation. Each step or stage corresponds to an Ant target in the build pipeline; the preprocess target calls the entire set of steps.">Pre-processing modules</a></div><div class="previouslink"><strong>Previous topic:</strong> <a class="link" href="../reference/preprocess-maplink.html" title="This step collects links based on a map and moves those links into the referenced topics. The links are created based on hierarchy in the DITA map, the collection-type attribute, and relationship tables. This step is implemented in XSLT and Java.">Map based linking (maplink)</a></div><div class="nextlink"><strong>Next topic:</strong> <a class="link" href="../reference/preprocess-flagging.html" title="Beginning with DITA-OT 1.7, flagging support is implemented as a common flag-module preprocessing step. The module evaluates the DITAVAL against all flagging attributes, and adds DITA-OT–specific hints to the topic when flags are active. Any extended transformation type may use these hints to support flagging without adding logic to interpret the DITAVAL.">Flagging (flag-module)</a></div></div></nav></article></main></div></div></div></section></div></div></div></section></body></html>

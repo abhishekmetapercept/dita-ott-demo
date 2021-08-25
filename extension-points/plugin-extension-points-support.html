@@ -1,0 +1,97 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="description" content="You can use these extension points to define version and support information for a plug-in. Currently, DITA-OT does not do anything with this information, but it might do so in the future."><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"><title>Version and support information</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+	 @media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    
+    max-width: 2140px;
+  }
+}
+</style></head><body id="plugin-support"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="/">DITA Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">FIRST LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">SECOND LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THIRD LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FOURTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FIFTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">SIXTH LINK</a></li>
+      </ul>
+    </div>
+	 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="mx-3">
+                        <!-- <a href="onclick="window.print()" class="btn btn-style btn-primary" onclick="window.print()">Default Button</a> -->
+						<button onclick="codespeedy()()" style="background: blueviolet;border: blue;">Print this page</button>
+						<!-- <input type="button" onclick="printInvoice();" value="Print"> -->
+                    </li>
+                </ul>
+            </div>
+  </div>
+</nav></header><script type="text/javascript">
+        
+    function codespeedy(){
+      var print_div = document.getElementById("abhi2");
+var print_area = window.open();
+print_area.document.write(print_div.innerHTML);
+print_area.document.close();
+print_area.focus();
+print_area.print();
+print_area.close();
+
+    }
+  </script><section id="faq" class="w3l-content-4 py-5"><div class="container"><div class="row"><div class="col-lg-3.5" style="padding: 20px;"><div class="container" id="abhi1"><nav role="toc" class="col" id="abhi1"><ul><li><a href="../index.html">DITA Open Toolkit 3.6</a></li><li><a href="../release-notes/index.html">Release Notes</a></li><li><a href="../topics/installing-client.html">Installing DITA-OT</a></li><li><a href="../topics/building-output.html">Building output</a></li><li><a href="../topics/input-formats.html">Authoring formats</a></li><li><a href="../topics/output-formats.html">Output formats</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../topics/html-customization.html">Customizing HTML</a></li><li><a href="../topics/pdf-customization.html">Customizing PDF</a></li><li><a href="../topics/adding-plugins.html">Adding plug-ins</a></li><li><a href="../topics/custom-plugins.html">Creating plug-ins</a></li><li><a href="../topics/troubleshooting-overview.html">Troubleshooting</a></li><li><a href="../reference/index.html">Reference</a><ul><li><a href="../reference/architecture.html">DITA-OT architecture</a></li><li><a href="../reference/dita-spec-support.html">DITA specification support</a></li><li><a href="../extension-points/plugin-extension-points.html">Extension points</a><ul><li><a href="../extension-points/all-extension-points.html">All extension points</a></li><li><a href="../extension-points/plugin-extension-points-general.html">General extension points</a></li><li><a href="../extension-points/plugin-extension-points-pre-processing.html">Pre-processing extension points</a></li><li><a href="../extension-points/plugin-extension-points-xslt-import.html">XSLT-import extension points</a></li><li><a href="../extension-points/plugin-extension-points-xslt-parameters.html">XSLT-parameter extension points</a></li><li class="active"><a href="../extension-points/plugin-extension-points-support.html">Version and support information</a></li><li><a href="../extension-points/extension-points-by-plugin.html">Plug-in extension points</a></li></ul></li><li><a href="../reference/license.html">License</a></li><li><a href="../reference/glossary.html#glossary">Glossary</a></li></ul></li><li><a href="../topics/dita-and-dita-ot-resources.html">Resources</a></li></ul></nav></div></div><div class="content-right col-lg-8 pl-lg-4 mt-lg-0 mt-3"><section class="accordion-section clearfix mt-3" aria-label="Question Accordions"><div class="container"><div class="container" id="abhi2"><div class="row"><main role="main" class="col" id="abhi2"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Version and support information</h1>
+  
+  <div class="body refbody"><p class="shortdesc">You can use these extension points to define version and support information for a plug-in. Currently,
+    DITA-OT does not do anything with this information, but it might do so in the future.</p>
+    <section class="section">
+      <dl class="dl">
+        
+          <dt class="dt dlterm"><span class="keyword parmname">package.support.name</span></dt>
+          <dd class="dd">Specifies the
+            person who provides support for the DITA-OT plug-in.</dd>
+        
+        
+          <dt class="dt dlterm"><span class="keyword parmname">package.support.email</span></dt>
+          <dd class="dd">Specifies the
+            e-mail address of the person who provides support for the DITA-OT plug-in.</dd>
+        
+        
+          <dt class="dt dlterm"><span class="keyword parmname">package.version</span></dt>
+          <dd class="dd">Specifies the version
+            of the DITA-OT plug-in.</dd>
+          <dd class="dd ddexpand">
+            <p class="p">The value uses the following syntax:</p>
+            <pre class="pre codeblock"><code><var class="keyword varname">major</var>.<var class="keyword varname">minor</var>.<var class="keyword varname">micro</var>.<var class="keyword varname">qualifier</var></code></pre>
+            <p class="p">where:</p>
+            <ul class="ul">
+              <li class="li"><var class="keyword varname">major</var> is a number and is required.</li>
+              <li class="li"><var class="keyword varname">minor</var> is a number and is optional.</li>
+              <li class="li"><var class="keyword varname">micro</var> is a number and is optional.</li>
+              <li class="li"><var class="keyword varname">qualifier</var> is optional and can be composed of numerals, uppercase or lower case
+                letters, underscores, and hyphens.</li>
+            </ul>
+            <p class="p">By default, the <span class="keyword parmname">package.version</span> value is set to <code class="ph codeph">0.0.0</code>.</p>
+          </dd>
+        
+      </dl>
+    </section>
+    <div class="example"><h2 class="title sectiontitle">Example</h2>
+      
+      <pre class="pre codeblock language-xml normalize-space show-line-numbers show-whitespace"><code>&lt;plugin id="com.example.WithSupportInfo"&gt;
+  &lt;feature extension="package.support.name" value="Joe the Author"/&gt;
+  &lt;feature extension="package.support.email" value="joe@example.com"/&gt;
+  &lt;feature extension="package.version" value="1.2.3"/&gt;
+&lt;/plugin&gt;</code></pre>
+    </div>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../extension-points/plugin-extension-points.html" title="DITA Open Toolkit provides a series of extension points that can be used to integrate changes into the core code. Extension points are defined in the plugin.xml file for each plug-in. When plug-ins are installed, DITA-OT makes each extension visible to the rest of the toolkit.">Extension point reference</a></div></div><div class="linklist relref"><strong>Related reference</strong><br><ul class="linklist"><li class="linklist"><a class="link" href="../extension-points/extension-points-in-org.dita.base.html" title="The org.dita.base plug-in provides common extension points that are available to extend processing in all transformations that DITA Open Toolkit supports.">Extension points in org.dita.base</a></li></ul></div></nav></article></main></div></div></div></section></div></div></div></section></body></html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="description" content="In DITA-OT 1.8, certain stylesheets were moved to plug-in specific folders and various deprecated Ant properties, XSLT stylesheets, parameters and modes were removed from the XHTML, PDF and ODT transformations."><meta name="keywords" content="deprecated features, dita.script.dir, dita.resource.dir, dita.empty, args.message.file, ImgUtils, artwork-preprocessor.xsl, otdita2fo_frontend.xsl, insertVariable.old, XSLT mode,, layout-masters-processing, toc-prefix-text, toc-topic-text, args.fo.include.rellinks, Legacy PDF, args.odt.include.rellinks, disableRelatedLinks"><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"><title>Migrating to release 1.8</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+	 @media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    
+    max-width: 2140px;
+  }
+}
+</style></head><body id="ID"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="/">DITA Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">FIRST LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">SECOND LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THIRD LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FOURTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FIFTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">SIXTH LINK</a></li>
+      </ul>
+    </div>
+	 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="mx-3">
+                        <!-- <a href="onclick="window.print()" class="btn btn-style btn-primary" onclick="window.print()">Default Button</a> -->
+						<button onclick="codespeedy()()" style="background: blueviolet;border: blue;">Print this page</button>
+						<!-- <input type="button" onclick="printInvoice();" value="Print"> -->
+                    </li>
+                </ul>
+            </div>
+  </div>
+</nav></header><script type="text/javascript">
+        
+    function codespeedy(){
+      var print_div = document.getElementById("abhi2");
+var print_area = window.open();
+print_area.document.write(print_div.innerHTML);
+print_area.document.close();
+print_area.focus();
+print_area.print();
+print_area.close();
+
+    }
+  </script><section id="faq" class="w3l-content-4 py-5"><div class="container"><div class="row"><div class="col-lg-3.5" style="padding: 20px;"><div class="container" id="abhi1"><nav role="toc" class="col" id="abhi1"><ul><li><a href="../index.html">DITA Open Toolkit 3.6</a></li><li><a href="../release-notes/index.html">Release Notes</a></li><li><a href="../topics/installing-client.html">Installing DITA-OT</a></li><li><a href="../topics/building-output.html">Building output</a></li><li><a href="../topics/input-formats.html">Authoring formats</a></li><li><a href="../topics/output-formats.html">Output formats</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../topics/html-customization.html">Customizing HTML</a></li><li><a href="../topics/pdf-customization.html">Customizing PDF</a></li><li><a href="../topics/adding-plugins.html">Adding plug-ins</a></li><li><a href="../topics/custom-plugins.html">Creating plug-ins</a><ul><li><a href="../topics/plugin-benefits.html">Plug-in benefits</a></li><li><a href="../topics/plugin-configfile.html">Plug-in descriptor file</a></li><li><a href="../topics/plugin-coding-conventions.html">Coding conventions</a></li><li><a href="../topics/plugin-dependencies.html">Plug-in dependencies</a></li><li><a href="../topics/plugin-use-cases.html">Plug-in use cases</a></li><li><a href="../topics/html-customization-plugins.html">Custom HTML plug-ins</a></li><li><a href="../topics/pdf-customization-plugins.html">Custom PDF plug-ins</a></li><li><a href="../topics/globalization.html">Globalizing DITA content</a></li><li><a href="../topics/migration.html">Migrating customizations</a><ul><li><a href="../topics/migrating-to-3.6.html">To 3.6</a></li><li><a href="../topics/migrating-to-3.5.html">To 3.5</a></li><li><a href="../topics/migrating-to-3.4.html">To 3.4</a></li><li><a href="../topics/migrating-to-3.3.html">To 3.3</a></li><li><a href="../topics/migrating-to-3.2.html">To 3.2</a></li><li><a href="../topics/migrating-to-3.1.html">To 3.1</a></li><li><a href="../topics/migrating-to-3.0.html">To 3.0</a></li><li><a href="../topics/migrating-to-2.5.html">To 2.5</a></li><li><a href="../topics/migrating-to-2.4.html">To 2.4</a></li><li><a href="../topics/migrating-to-2.3.html">To 2.3</a></li><li><a href="../topics/migrating-to-2.2.html">To 2.2</a></li><li><a href="../topics/migrating-to-2.1.html">To 2.1</a></li><li><a href="../topics/migrating-to-2.0.html">To 2.0</a></li><li class="active"><a href="../topics/migrating-to-1.8.html">To 1.8</a></li><li><a href="../topics/migrating-to-1.7.html">To 1.7</a></li><li><a href="../topics/migrating-to-1.6.html">To 1.6</a></li><li><a href="../topics/migrating-to-1.5.4.html">To 1.5.4</a></li></ul></li></ul></li><li><a href="../topics/troubleshooting-overview.html">Troubleshooting</a></li><li><a href="../reference/index.html">Reference</a></li><li><a href="../topics/dita-and-dita-ot-resources.html">Resources</a></li></ul></nav></div></div><div class="content-right col-lg-8 pl-lg-4 mt-lg-0 mt-3"><section class="accordion-section clearfix mt-3" aria-label="Question Accordions"><div class="container"><div class="container" id="abhi2"><div class="row"><main role="main" class="col" id="abhi2"><article role="article" aria-labelledby="ariaid-title1">
+
+  <h1 class="title topictitle1" id="ariaid-title1">Migrating to release 1.8</h1>
+  
+
+  
+
+  
+
+  <div class="body refbody"><p class="shortdesc">In DITA-OT 1.8, certain stylesheets were moved to plug-in specific folders and various deprecated Ant
+    properties, XSLT stylesheets, parameters and modes were removed from the XHTML, PDF and ODT
+    transformations.</p>
+    <section class="section">
+      <p class="p">Stylesheets for the following transformation types have moved to plug-in specific folders:</p>
+      <ul class="ul">
+        <li class="li"><span class="keyword option">eclipsehelp</span></li>
+        <li class="li"><span class="keyword option">htmlhelp</span></li>
+        <li class="li"><span class="keyword option">javahelp</span></li>
+        <li class="li"><span class="keyword option">odt</span></li>
+        <li class="li"><span class="keyword option">xhtml</span></li>
+      </ul>
+    </section>
+    <section class="section"><h2 class="title sectiontitle">Preprocessing</h2>
+      
+      <p class="p">The following deprecated Ant properties have been removed:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">dita.script.dir</code>, use <code class="ph codeph">${dita.plugin.<var class="keyword varname">id</var>.dir}</code> instead</li>
+        <li class="li"><code class="ph codeph">dita.resource.dir</code>, use <code class="ph codeph">${dita.plugin.org.dita.base.dir}/resource</code>
+          instead</li>
+        <li class="li"><code class="ph codeph">dita.empty</code></li>
+        <li class="li"><code class="ph codeph">args.message.file</code></li>
+      </ul>
+    </section>
+    <section class="section"><h2 class="title sectiontitle">XHTML</h2>
+      
+      <p class="p">XSLT Java extension <code class="ph codeph">ImgUtils</code> has been removed from stylesheets and been replaced with
+        preprocessing module <code class="ph codeph">ImageMetadataModule</code>. The old <code class="ph codeph">ImgUtils</code> Java classes are
+        still included in the build.</p>
+    </section>
+    <section class="section"><h2 class="title sectiontitle">PDF</h2>
+      
+      
+      
+      <p class="p">The following deprecated XSLT stylesheets have been removed:</p>
+      <ul class="ul">
+        <li class="li"><span class="ph filepath">artwork-preprocessor.xsl</span></li>
+        <li class="li"><span class="ph filepath">otdita2fo_frontend.xsl</span></li>
+      </ul>
+      <p class="p">The following deprecated XSLT templates have been removed:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">insertVariable.old</code></li>
+      </ul>
+      <p class="p">The following deprecated XSLT modes have been removed:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">layout-masters-processing</code></li>
+        <li class="li"><code class="ph codeph">toc-prefix-text</code>, use <code class="ph codeph">tocPrefix</code> mode instead</li>
+        <li class="li"><code class="ph codeph">toc-topic-text</code>, use <code class="ph codeph">tocText</code> mode instead</li>
+      </ul>
+      <p class="p">Link generation has been simplified by removing deprecated arguments in favor of
+        <code class="ph codeph">args.rellinks</code>. The following deprecated Ant properties have been removed:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">args.fo.include.rellinks</code></li>
+      </ul>
+      <p class="p">The following XSLT parameters have been removed:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">antArgsIncludeRelatedLinks</code></li>
+        <li class="li"><code class="ph codeph">disableRelatedLinks</code></li>
+      </ul>
+      <p class="p">A call to a named template <code class="ph codeph">pullPrologIndexTerms.end-range</code> has been added to
+          <code class="ph codeph">processTopic*</code> templates to handle topic wide index ranges.</p>
+    </section>
+    <section class="section"><h2 class="title sectiontitle">Legacy PDF</h2>
+      
+      <p class="p">The following deprecated XSLT stylesheets have been removed:</p>
+      <ul class="ul">
+        <li class="li"><span class="ph filepath">dita2fo-shell_template.xsl</span></li>
+        <li class="li"><span class="ph filepath">topic2fo-shell.xsl</span></li>
+      </ul>
+    </section>
+    <section class="section"><h2 class="title sectiontitle">ODT</h2>
+      
+      <p class="p">Link generation has been simplified by removing deprecated arguments in favor of
+        <code class="ph codeph">args.rellinks</code>. The following deprecated Ant properties have been removed:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">args.odt.include.rellinks</code></li>
+      </ul>
+      <p class="p">The following XSLT parameters have been added:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">include.rellinks</code></li>
+      </ul>
+      <p class="p">The following XSLT parameters have been removed:</p>
+      <ul class="ul">
+        <li class="li"><code class="ph codeph">disableRelatedLinks</code></li>
+      </ul>
+    </section>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/migration.html" title="If you have XSL transformation overrides, plug-ins or other customizations written prior to DITA-OT 3.6, you may need to make changes to ensure your overrides work properly with the latest toolkit versions.">Migrating customizations</a></div></div></nav></article></main></div></div></div></section></div></div></div></section></body></html>

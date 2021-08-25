@@ -1,0 +1,139 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="description" content="DITA-OT includes sample project files in JSON format that can be used to define a publication project. Like the XML project samples, the sample JSON files illustrate how deliverables can be described for use in publication projects. The JSON samples are functionally equivalent to their XML and YAML counterparts, with minor adaptations to JSON file syntax."><meta name="keywords" content="JSON project files, project files, JSON"><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"><title>Sample JSON project files</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+	 @media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    
+    max-width: 2140px;
+  }
+}
+</style></head><body id="ID"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="/">DITA Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">FIRST LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">SECOND LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THIRD LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FOURTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FIFTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">SIXTH LINK</a></li>
+      </ul>
+    </div>
+	 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="mx-3">
+                        <!-- <a href="onclick="window.print()" class="btn btn-style btn-primary" onclick="window.print()">Default Button</a> -->
+						<button onclick="codespeedy()()" style="background: blueviolet;border: blue;">Print this page</button>
+						<!-- <input type="button" onclick="printInvoice();" value="Print"> -->
+                    </li>
+                </ul>
+            </div>
+  </div>
+</nav></header><script type="text/javascript">
+        
+    function codespeedy(){
+      var print_div = document.getElementById("abhi2");
+var print_area = window.open();
+print_area.document.write(print_div.innerHTML);
+print_area.document.close();
+print_area.focus();
+print_area.print();
+print_area.close();
+
+    }
+  </script><section id="faq" class="w3l-content-4 py-5"><div class="container"><div class="row"><div class="col-lg-3.5" style="padding: 20px;"><div class="container" id="abhi1"><nav role="toc" class="col" id="abhi1"><ul><li><a href="../index.html">DITA Open Toolkit 3.6</a></li><li><a href="../release-notes/index.html">Release Notes</a></li><li><a href="../topics/installing-client.html">Installing DITA-OT</a></li><li><a href="../topics/building-output.html">Building output</a><ul><li><a href="../topics/build-using-dita-command.html">Using the dita command</a><ul><li><a href="../topics/using-dita-properties-file.html">Using a properties file</a></li><li><a href="../topics/migrating-ant-to-dita.html">Migrating Ant builds</a></li><li><a href="../topics/using-project-files.html">Using a project file</a><ul><li><a href="../topics/project-files-xml.html">XML project files</a></li><li class="active"><a href="../topics/project-files-json.html">JSON project files</a></li><li><a href="../topics/project-files-yaml.html">YAML project files</a></li></ul></li></ul></li><li><a href="../topics/using-docker-images.html">Using Docker images</a></li><li><a href="../topics/using-github-actions.html">Using GitHub Actions</a></li><li><a href="../topics/publishing-with-ant.html">Using Ant</a></li><li><a href="../reference/java-api.html">Using the Java API</a></li></ul></li><li><a href="../topics/input-formats.html">Authoring formats</a></li><li><a href="../topics/output-formats.html">Output formats</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../topics/html-customization.html">Customizing HTML</a></li><li><a href="../topics/pdf-customization.html">Customizing PDF</a></li><li><a href="../topics/adding-plugins.html">Adding plug-ins</a></li><li><a href="../topics/custom-plugins.html">Creating plug-ins</a></li><li><a href="../topics/troubleshooting-overview.html">Troubleshooting</a></li><li><a href="../reference/index.html">Reference</a></li><li><a href="../topics/dita-and-dita-ot-resources.html">Resources</a></li></ul></nav></div></div><div class="content-right col-lg-8 pl-lg-4 mt-lg-0 mt-3"><section class="accordion-section clearfix mt-3" aria-label="Question Accordions"><div class="container"><div class="container" id="abhi2"><div class="row"><main role="main" class="col" id="abhi2"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Sample JSON project files</h1>
+  
+  
+  
+  <div class="body conbody"><p class="shortdesc">DITA-OT includes sample project files in
+    <a class="xref" href="https://json.org" target="_blank" rel="external noopener">JSON</a> format that can be used to define a publication project. Like the XML project samples, the
+    sample JSON files illustrate how deliverables can be described for use in publication projects. The JSON samples are
+    functionally equivalent to their XML and YAML counterparts, with minor adaptations to JSON file syntax.</p>
+    <p class="p">Project files can be designed in a modular fashion to create reusable configuration structures that allow you to
+      define settings in one file and refer to them in other projects to publish multiple deliverables at once.</p>
+    <p class="p">For example, <span class="ph filepath"><var class="keyword varname">dita-ot-dir</var>/docsrc/samples</span><span class="ph filepath">/project-files/html.json</span> defines
+      a single HTML deliverable.</p>
+    <figure class="fig fignone"><figcaption><span class="fig--title-label">Figure 1. </span>Sample project file for HTML output</figcaption>
+      
+      <pre class="pre codeblock language-json normalize-space show-line-numbers show-whitespace"><code>{
+  "includes": ["common.json"],
+  "deliverables": [
+    {
+      "name": "HTML5",
+      "context": {"idref": "html"},
+      "output": ".",
+      "publication": {
+        "transtype": "html5",
+        "params": [
+          {
+            "name": "args.copycss",
+            "value": "yes"
+          },
+          {
+            "name": "args.css",
+            "value": "dita-ot-doc.css"
+          },
+          {
+            "name": "args.csspath",
+            "value": "css"
+          },
+          {
+            "name": "args.cssroot",
+            "path": "../../resources"
+          },
+          {
+            "name": "args.gen.task.lbl",
+            "value": "YES"
+          },
+          {
+            "name": "args.hdr",
+            "href": "../../resources/header.xml"
+          },
+          {
+            "name": "html5.toc.generate",
+            "value": "no"
+          },
+          {
+            "name": "nav-toc",
+            "value": "partial"
+          },
+          {
+            "name": "processing-mode",
+            "value": "strict"
+          }
+        ]
+      }
+    }
+  ]
+}</code></pre>
+    </figure>
+    <p class="p">This file can be used to generate the HTML version of the DITA-OT documentation by running the following command
+      from the <span class="ph filepath">docsrc</span> folder of the DITA-OT installation directory:</p>
+    <pre class="pre codeblock syntax-bash"><code><span class="keyword cmdname">dita</span> <span class="keyword parmname">--project</span>=<var class="keyword varname">samples/project-files/html.json</var></code></pre>
+    <p class="p">The project file for HTML output imports the common <code class="ph codeph">html</code> context from a shared project context
+      defined in the <span class="ph filepath"><var class="keyword varname">dita-ot-dir</var>/docsrc/samples</span><span class="ph filepath">/project-files/common.json</span>
+      file, which includes the input map file and the DITAVAL file used to filter the output.</p>
+    <figure class="fig fignone"><figcaption><span class="fig--title-label">Figure 2. </span>Sample shared context for HTML-based output</figcaption>
+      
+      <pre class="pre codeblock language-json normalize-space show-line-numbers show-whitespace"><code>{
+  "contexts": [
+    {
+      "id": "html",
+      "input": "../../userguide.ditamap",
+      "profiles": {
+        "ditavals": ["../../resources/html.ditaval"]
+      }
+    }
+  ]
+}</code></pre>
+    </figure>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/using-project-files.html" title="DITA-OT 3.4 introduces new project files to define publication projects with multiple deliverables. Projects specify a context, output folder, and publication for each deliverable. A re-usable context groups source files and filters, and a publication defines an output format with transformation parameters. You can pass a project file to the dita command to publish multiple deliverables at once.">Publishing with project files</a></div></div></nav></article></main></div></div></div></section></div></div></div></section></body></html>

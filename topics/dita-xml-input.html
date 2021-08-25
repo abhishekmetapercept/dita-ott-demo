@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="description" content="DITA Open Toolkit supports all released versions of the OASIS DITA specification, including 1.0, 1.1, 1.2, and 1.3. As of release 3.6, DITA-OT also provides an initial preview of features for the latest draft of the upcoming DITA 2.0 standard."><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"><title>Standard DITA XML</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+	 @media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    
+    max-width: 2140px;
+  }
+}
+</style></head><body id="ID"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="/">DITA Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">FIRST LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">SECOND LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THIRD LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FOURTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FIFTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">SIXTH LINK</a></li>
+      </ul>
+    </div>
+	 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="mx-3">
+                        <!-- <a href="onclick="window.print()" class="btn btn-style btn-primary" onclick="window.print()">Default Button</a> -->
+						<button onclick="codespeedy()()" style="background: blueviolet;border: blue;">Print this page</button>
+						<!-- <input type="button" onclick="printInvoice();" value="Print"> -->
+                    </li>
+                </ul>
+            </div>
+  </div>
+</nav></header><script type="text/javascript">
+        
+    function codespeedy(){
+      var print_div = document.getElementById("abhi2");
+var print_area = window.open();
+print_area.document.write(print_div.innerHTML);
+print_area.document.close();
+print_area.focus();
+print_area.print();
+print_area.close();
+
+    }
+  </script><section id="faq" class="w3l-content-4 py-5"><div class="container"><div class="row"><div class="col-lg-3.5" style="padding: 20px;"><div class="container" id="abhi1"><nav role="toc" class="col" id="abhi1"><ul><li><a href="../index.html">DITA Open Toolkit 3.6</a></li><li><a href="../release-notes/index.html">Release Notes</a></li><li><a href="../topics/installing-client.html">Installing DITA-OT</a></li><li><a href="../topics/building-output.html">Building output</a></li><li><a href="../topics/input-formats.html">Authoring formats</a><ul><li class="active"><a href="../topics/dita-xml-input.html">Standard DITA XML</a></li><li><a href="../topics/markdown-input.html">Markdown content</a></li><li><a href="../topics/lwdita-input.html">Lightweight DITA</a></li><li><a href="../topics/markdown-dita-syntax-reference.html">Markdown DITA syntax</a></li></ul></li><li><a href="../topics/output-formats.html">Output formats</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../topics/html-customization.html">Customizing HTML</a></li><li><a href="../topics/pdf-customization.html">Customizing PDF</a></li><li><a href="../topics/adding-plugins.html">Adding plug-ins</a></li><li><a href="../topics/custom-plugins.html">Creating plug-ins</a></li><li><a href="../topics/troubleshooting-overview.html">Troubleshooting</a></li><li><a href="../reference/index.html">Reference</a></li><li><a href="../topics/dita-and-dita-ot-resources.html">Resources</a></li></ul></nav></div></div><div class="content-right col-lg-8 pl-lg-4 mt-lg-0 mt-3"><section class="accordion-section clearfix mt-3" aria-label="Question Accordions"><div class="container"><div class="container" id="abhi2"><div class="row"><main role="main" class="col" id="abhi2"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Standard DITA XML</h1>
+  
+  <div class="body"><p class="shortdesc">DITA Open Toolkit supports all released versions of the OASIS DITA specification, including 1.0, 1.1, 1.2,
+    and 1.3. As of release <span class="keyword">3.6</span>, DITA-OT also provides an initial preview of features for the
+    latest draft of the upcoming DITA 2.0 standard.</p>
+    <p class="p">The DITA specification “defines a set of document types for authoring and organizing topic-oriented information,
+      as well as a set of mechanisms for combining, extending, and constraining document types.” The
+      <a class="xref" href="http://docs.oasis-open.org/dita/dita/v1.3/dita-v1.3-part0-overview.html" target="_blank" rel="external noopener">DITA 1.3 specification</a> is the authoritative source of information on authoring DITA content in XML.</p>
+    <div class="note tip note_tip"><span class="note__title">Tip:</span> For details on how DITA Open Toolkit processes DITA XML content, see
+      <a class="xref" href="../reference/dita-spec-support.html" title="DITA Open Toolkit 3.6 supports all versions of the OASIS DITA specification, including 1.0, 1.1, 1.2, and 1.3.">DITA specification support</a>.</div>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/input-formats.html" title="In addition to standard DITA XML, DITA-OT supports several alternative input formats, including Markdown and the proposed XDITA, MDITA and HDITA authoring formats currently in development for Lightweight DITA.">Authoring formats</a></div></div><div class="linklist relinfo"><strong>Related information</strong><br><ul class="linklist"><li class="linklist"><a class="link" href="../topics/markdown-input.html" title="Markdown is a lightweight markup language that allows you to write using an easy-to-read plain text format and convert to structurally valid markup as necessary.">Markdown content</a></li><li class="linklist"><a class="link" href="../topics/lwdita-input.html" title="DITA-OT provides preview support for the authoring formats proposed for Lightweight DITA, or “LwDITA”. The XDITA, MDITA and HDITA formats are alternative representations of DITA content in XML, Markdown and HTML5.">Preview support for Lightweight DITA</a></li><li class="linklist"><a class="link" href="../topics/markdown-dita-syntax-reference.html" title="Markdown DITA uses CommonMark as the underlying markup language.">Markdown DITA syntax reference</a></li></ul></div></nav></article></main></div></div></div></section></div></div></div></section></body></html>

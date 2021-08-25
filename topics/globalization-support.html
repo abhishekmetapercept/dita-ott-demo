@@ -1,0 +1,86 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="copyright" content="(C) Copyright 2021"><meta name="generator" content="DITA-OT"><meta name="description" content="DITA Open Toolkit offers globalization support in the following areas: generated text, index sorting, and bi-directional text."><meta name="keywords" content=", dir, index:lang, languages, index sorting, right-to-left, bi-directional, English, strings, index, sorting, bi-directional languages, generated text, CSS, right-to-left languages"><link rel="stylesheet" type="text/css" href="../css/commonltr.css"><link rel="stylesheet" type="text/css" href="../css/custom.css"><title>Globalization support</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<style>
+	 @media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    
+    max-width: 2140px;
+  }
+}
+</style></head><body id="globalization-support"><header role="banner"><nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+
+  <div class="container">
+    <a class="navbar-brand" href="/">DITA Bootstrap</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="#">FIRST LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">SECOND LINK</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">THIRD LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FOURTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">FIFTH LINK</a></li>
+		<li class="nav-item"><a class="nav-link" href="#">SIXTH LINK</a></li>
+      </ul>
+    </div>
+	 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto"> 
+                    <li class="mx-3">
+                        <!-- <a href="onclick="window.print()" class="btn btn-style btn-primary" onclick="window.print()">Default Button</a> -->
+						<button onclick="codespeedy()()" style="background: blueviolet;border: blue;">Print this page</button>
+						<!-- <input type="button" onclick="printInvoice();" value="Print"> -->
+                    </li>
+                </ul>
+            </div>
+  </div>
+</nav></header><script type="text/javascript">
+        
+    function codespeedy(){
+      var print_div = document.getElementById("abhi2");
+var print_area = window.open();
+print_area.document.write(print_div.innerHTML);
+print_area.document.close();
+print_area.focus();
+print_area.print();
+print_area.close();
+
+    }
+  </script><section id="faq" class="w3l-content-4 py-5"><div class="container"><div class="row"><div class="col-lg-3.5" style="padding: 20px;"><div class="container" id="abhi1"><nav role="toc" class="col" id="abhi1"><ul><li><a href="../index.html">DITA Open Toolkit 3.6</a></li><li><a href="../release-notes/index.html">Release Notes</a></li><li><a href="../topics/installing-client.html">Installing DITA-OT</a></li><li><a href="../topics/building-output.html">Building output</a></li><li><a href="../topics/input-formats.html">Authoring formats</a></li><li><a href="../topics/output-formats.html">Output formats</a></li><li><a href="../parameters/index.html">Parameters</a></li><li><a href="../topics/html-customization.html">Customizing HTML</a></li><li><a href="../topics/pdf-customization.html">Customizing PDF</a></li><li><a href="../topics/adding-plugins.html">Adding plug-ins</a></li><li><a href="../topics/custom-plugins.html">Creating plug-ins</a><ul><li><a href="../topics/plugin-benefits.html">Plug-in benefits</a></li><li><a href="../topics/plugin-configfile.html">Plug-in descriptor file</a></li><li><a href="../topics/plugin-coding-conventions.html">Coding conventions</a></li><li><a href="../topics/plugin-dependencies.html">Plug-in dependencies</a></li><li><a href="../topics/plugin-use-cases.html">Plug-in use cases</a></li><li><a href="../topics/html-customization-plugins.html">Custom HTML plug-ins</a></li><li><a href="../topics/pdf-customization-plugins.html">Custom PDF plug-ins</a></li><li><a href="../topics/globalization.html">Globalizing DITA content</a><ul><li class="active"><a href="../topics/globalization-support.html">Globalization support</a></li><li><a href="../topics/plugin-addgeneratedtext.html">Customizing generated text</a></li><li><a href="../topics/globalization-languages.html">Supported languages</a></li></ul></li><li><a href="../topics/migration.html">Migrating customizations</a></li></ul></li><li><a href="../topics/troubleshooting-overview.html">Troubleshooting</a></li><li><a href="../reference/index.html">Reference</a></li><li><a href="../topics/dita-and-dita-ot-resources.html">Resources</a></li></ul></nav></div></div><div class="content-right col-lg-8 pl-lg-4 mt-lg-0 mt-3"><section class="accordion-section clearfix mt-3" aria-label="Question Accordions"><div class="container"><div class="container" id="abhi2"><div class="row"><main role="main" class="col" id="abhi2"><article role="article" aria-labelledby="ariaid-title1">
+  <h1 class="title topictitle1" id="ariaid-title1">Globalization support</h1>
+  
+  
+  
+  <div class="body conbody"><p class="shortdesc">DITA Open Toolkit offers globalization support in the following areas: generated text, index sorting, and
+    bi-directional text.</p>
+    <div class="p">
+      <dl class="dl">
+        
+          <dt class="dt dlterm">Generated text</dt>
+          <dd class="dd"><dfn class="term">Generated text</dfn> is text that is rendered automatically in the output that is generated by
+            DITA-OT; this text is not located in the DITA source files. The following are examples of generated text:
+            <ul class="ul">
+              <li class="li">The word "Chapter" in a PDF file.</li>
+              <li class="li">The phrases "Related concepts," "Related tasks," and "Related reference" in HTML output.</li>
+            </ul></dd>
+        
+        
+          <dt class="dt dlterm">Index sorting</dt>
+          <dd class="dd">DITA-OT can use only a single language to sort indexes.</dd>
+        
+        
+          <dt class="dt dlterm">Bi-directional text</dt>
+          <dd class="dd">DITA-OT contains style sheets (CSS files) that support both left-to-right (LTR) and right-to-left (RTL)
+            languages in HTML based transformations. PDF supports both LTR and RTL rendering based on the document
+            language. The <code class="keyword markupname xmlatt">@dir</code> attribute can be used to override the default rendering direction.</dd>
+        
+      </dl>When DITA-OT generates output, it takes the first value for the <code class="keyword markupname xmlatt">@xml:lang</code> attribute that it
+      encounters, and then it uses that value to create generated text, perform index sorting, and determine which
+      default CSS file is used. If no value for the <code class="keyword markupname xmlatt">@xml:lang</code> attribute is found, the toolkit defaults
+      to U.S. English. You can use the
+      <a class="xref" href="../parameters/configuration-properties.html" title="DITA-OT uses .properties files and internal properties that store configuration settings for the toolkit and its plug-ins. Configuration properties are available to both Ant and Java processes, but unlike argument properties, they cannot be set at run time.">configuration.properties</a> to change the default
+      language.</div>
+  </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../topics/globalization.html" title="The DITA standard supports content that is written in or translated to any language. In general, DITA Open Toolkit passes content through to the output format unchanged. DITA-OT uses the values for the xml:lang and dir attributes that are set in the source content to provide globalization support. You can create custom plug-ins to support additional languages.">Globalizing DITA content</a></div></div></nav></article></main></div></div></div></section></div></div></div></section></body></html>

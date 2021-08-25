@@ -1,0 +1,41 @@
+/* Style navigation as sidebar */
+nav[role=toc] {
+  float: left;
+}
+
+/* Highlight current topic in bold */
+nav[role=toc] li.active > a {
+  font-weight: bold;
+  border-width: thin !important;
+  border-style: double;
+  background-color: #cbcbcb;
+  justify-content: space-between;
+  /* width: auto; */
+}
+nav[role=toc] li > a {
+  font-weight: bold;
+  border-width: thin !important;
+  border-style: double;
+  background-color: #cbcbcb;
+  justify-content: space-between;
+  /* width: auto; */
+}
+
+/* Adjust navigation indentation */
+.bs-docs-sidenav,
+.bs-docs-sidenav li ul {
+  padding-left: 20px;
+}
+
+/* Fix table conflict with bootstrap's row class */
+.table .row {
+  display: table-row;
+}
+
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    /* max-width: 1140px; */
+    max-width: 2140px;
+  }
+}
